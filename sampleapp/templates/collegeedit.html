@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/collegeupdate/{{edit.id}}" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="name" id="" placeholder="" value="{{edit.name}}"><br><br>
+        <input type="text" name="place" id="" placeholder="" value="{{edit.place}}"><br><br>
+        <input type="number" name="phone" id="" placeholder="" value="{{edit.phone}}"><br><br>
+        <input type="submit" value="update">
+
+    </form>
+</body>
+</html>

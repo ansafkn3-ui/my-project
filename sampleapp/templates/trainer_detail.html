@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <p> <b>{{a.firstname}}</b></p>
+    <p> <b>{{a.lastname}}</b></p>
+    <p><b> {{a.age}}</b></p>
+    <p><b> {{a.email}}</b></p>
+    <p> <b>{{a.password}}</b></p>
+
+    <a href="{% url 'Trainerupdate' a.pk %}" ><b> EDIT </b></a><br><br>
+    <a href="{% url 'Trainerdelete' a.pk %}" ><b> DELETE </b></a>
+
+    
+</body>
+</html>

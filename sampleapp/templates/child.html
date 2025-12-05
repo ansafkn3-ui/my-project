@@ -1,0 +1,31 @@
+{% extends "parent.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block content1 %}
+    <title>child</title>
+    {% endblock content1 %}
+</head>
+<body>
+    {% block content2 %}
+    <h1>child1 homepage</h1>
+    {% endblock content2 %}
+
+    {% block content3 %}
+    <img src="{% static  'images/cherry.jpg' %}" alt="" width="200px" height="200px">
+    <p>A cherry is a small, round, stone fruit that can be sweet or
+             sour, with a smooth skin and edible flesh surrounding a hard pit</p>
+    
+    {% endblock content3 %}
+
+     {% block content4 %}
+     <footer> sweet and sour cherry</footer>
+      {% endblock content4 %}
+
+
+</body>
+</html>

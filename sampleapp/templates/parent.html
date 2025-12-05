@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block content1 %}
+    <title>parent</title>
+    {% endblock content1 %}
+</head>
+<body>
+    {% block content2 %}
+    <h2>parent Homepage</h2>
+    {% endblock content2 %}
+    
+    {% block content3 %}
+    <img src="{% static  'images/pomegranitee.jpg' %}" alt="" width="300px" height="300px">
+    <p>A pomegranate is a round, fruit-bearing shrub 
+        or small tree that produces a fruit with thick, leathery skin</p>
+    {% endblock content3 %}
+
+    
+     {% block content4 %}
+
+    <footer >Juicy pomegranite</footer>
+         {% endblock content4 %}
+
+</body>
+</html>

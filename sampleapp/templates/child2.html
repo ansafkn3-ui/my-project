@@ -1,0 +1,34 @@
+{% extends "parent.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child2</title>
+</head>
+<body>
+    
+    {% block content2 %}
+    <h1>child2 Homepage</h1>
+    {% endblock content2 %}
+
+        {% block content3 %}
+
+    <img src="{% static  'images/strawberry.jpg' %}" alt="" width="200px " height="200px">
+
+    <p>A strawberry is a red, heart-shaped, juicy
+     fruit with a sweet and slightly tart flavor that grows on a low-lying plant. </p>
+   
+     {% endblock content3 %}
+
+      {% block content4 %}
+      <footer>sweet strawberry</footer>
+       {% endblock content4 %}
+
+
+
+    
+</body>
+</html>
